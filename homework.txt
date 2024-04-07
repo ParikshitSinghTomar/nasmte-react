@@ -1,0 +1,6 @@
+what is CDN
+what is crossorigin
+why there are two files react.development.js and react-dom.development.js
+
+whats id difference between React and ReactDom class.
+React function and classes are case sensitive. So writing ReactDOM and ReactDom have difference.  
