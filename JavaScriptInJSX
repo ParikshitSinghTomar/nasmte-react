@@ -22,3 +22,16 @@ root.render(<HeadingComponent/>);
 //Remember if I want to print title then I need to write following. root.render(title);
 
 
+One use case
+
+Lets consider there are below line 
+const data=api.getData();
+
+now in below line of code
+{data}
+
+If data variable have some java script code then it will be executed and if this java script code have some java script code then it will impact your system means can steal info or can 
+do any other harm.(called "cross site scripting"), 
+
+In above case JSX code, it will sanitize any peiece of code and will be taken care by itself. No need to worry about this. 
+
