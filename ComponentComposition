@@ -9,7 +9,7 @@ const Title= () => (
 
 const HeadingComponent = () => (
   <div id="container">
-    <Title/>//this way of adding Title in Heading Component is called Component Composition
+    <Title/>//this way of adding Title in Heading Component is called Component Composition. You can also write this Title to {Title()}. 
     <h1 className="heading">Nmaste React Functional Component</h1>
   </div>
 );
