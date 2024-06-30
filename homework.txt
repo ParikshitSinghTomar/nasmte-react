@@ -1,7 +1,80 @@
-Master Access Token for 30 Days: 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
+
+02-06-2024a
+Master Access Token for 90 Days: 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
+https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
 what is CDN
 what is crossorigin
 why there are two files react.development.js and react-dom.development.js
 
 whats id difference between React and ReactDom class.
 React function and classes are case sensitive. So writing ReactDOM and ReactDom have difference.  
+What is dev dependencies and normal dependencies;
+Whats is ~ and carrot symbol
+Why we have two json file package-lock.json and package.json
+Whats is transitive dependencies;
+Command to ignite our app "npx parcel index.html"
+"npx parcel" executing the package.
+"npm install" install dependencies.
+Read parcel on parceljs.Com
+dev buld - > npx parcel build index.html[It will throw error because we define App.js as main entry point for our app]
+
+browserslist.dev
+
+
+npx parcel index.html to run local build but npx parcel build index.html for dev build
+
+add "start":"parcel index.html" in scripts tag of package.json to deb build
+add "build":"parcel build index.html" in scripts tag of package.json to build for production.
+build and start are just name you can provide anything
+
+now we don't need to write "npx parcel index.html" command, we can use "npm run start". Means it will read the command from script tag.
+
+You can also write "npm start" but we can write "npm build" because start is reserve keyword and npm will automatically manage it self.
+But npm build will not work you need write npm run build
+
+what is dom elements: Its basically html tag such as h1, head, body, li etc.
+What is react element: React element is not html element. React Element is an object which is avaialble for dom to render than it
+becames to an html element.
+-------------------
+JSX: Its Java Script Syntax which is used to create react elements. Below react code will create h1 heading but its not readable like 
+normal html coding. 
+const heading = React.createElement("h1", { id: "heading", "Namaste React " }, "Hello World from React");
+
+If we go with nested structure it will become too complex to maintain. So facebook developer created JSX 
+which is used to create ReactElements. 
+
+JSX is not html in java script. Its completely different, but JSX have html like syntax. for example
+const jsxheading=<h1>Namaste React using JSX</h1>. this jsx code will convert to React element and then react will convert it html element 
+and then dom using this to render. 
+------------------------
+
+what is ECAM6 it basically standard for java script.
+
+JSX(transpiled before it reaches the JS)- Parcel - Babel(Its java script compiler. Its not created by facebook)
+
+JSX=>React.createElement=>ReactElement - JS Object=>HTMLElement
+
+Babel is converting JSX code to React.createElement
+https://babeljs.io/
+
+JSX have cancel casing. for exanple in html we have tabindex but in jsx we have tabindex
+
+const jsxHeading=(put your code in these breckets to write in multiple lines.)
+
+React Component 1. Class Based Component, 2. Functional Component
+
+Function Component is used now, No need to write Class Based Component
+
+Functiona Component is java script Function which return some JSX code/ react element as below example.
+
+const HeadingComponent=()=> {
+
+    return <h1> Namste React</h>;
+}
+ 
+ above code can also be written like this. 
+ const HeadingComponent=()=>(<h1>Namste React</h1>)
+
+To print this functional component. 
+
+root.render(<HeadingComponent/>)

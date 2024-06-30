@@ -15,7 +15,6 @@ import ReactDOM from "react-dom/client";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(parent)
 
-const jsxheading=<h1 id="heading">Namste React using JSX</h1>
-
-const root=ReactDOM.createRoot(document.getElementById("root"));
+const jsxheading = <h1 id="heading">Namste React using JSX</h1>;
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(jsxheading);
